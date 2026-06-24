@@ -2,6 +2,7 @@
   import { RouterLink, RouterView, useRouter } from 'vue-router'
   import { ref, onMounted } from 'vue'
   import { useUserStore } from './stores/user'
+  import logoImg from '@/assets/imgs/logo.jpg'
 
   const { state, checkLogin, logout } = useUserStore()
   const router = useRouter()
@@ -35,7 +36,9 @@
     <header class="top-nav">
       <div class="top-nav-inner">
         <div class="logo">
-          <RouterLink to="/">网易云音乐</RouterLink>
+          <RouterLink to="/">
+            <img :src="logoImg" alt="时雨云音乐" class="logo-img" />
+          </RouterLink>
         </div>
         <nav class="nav-links">
           <RouterLink to="/" class="nav-link">音乐馆</RouterLink>
@@ -108,20 +111,19 @@
 }
 
 .logo {
-  width: 200px;
-  height: 36px;
-  background-image: url(/src/assets/imgs/logo.png);
-  background-repeat: no-repeat;
-  background-position: -40px -120px;
+  height: 48px;
   flex-shrink: 0;
 }
 
 .logo a {
   display: block;
-  width: 100%;
   height: 100%;
-  text-indent: -9999px;
-  overflow: hidden;
+}
+
+.logo-img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {

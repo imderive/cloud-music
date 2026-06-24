@@ -377,14 +377,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ffccc7;
+  border: 1px solid #b3d4f7;
   border-radius: var(--radius-sm);
   cursor: pointer;
-  background: #fff2f0;
+  background: #e8f2fc;
 }
 
 .qr-error:hover {
-  background: #ffebe8;
+  background: #d6e9fa;
 }
 
 .error-icon {

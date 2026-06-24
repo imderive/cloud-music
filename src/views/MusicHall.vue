@@ -570,7 +570,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(194, 12, 12, 0.4);
+  box-shadow: 0 2px 6px rgba(74, 144, 217, 0.4);
 }
 
 .artist-name {
