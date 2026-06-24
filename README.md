@@ -85,13 +85,6 @@ pnpm preview
 
 启动 API 服务后，前端即可正常请求数据。
 
-## 部署
-
-项目已配置 `vercel.json`，可直接部署到 Vercel：
-
-- 构建命令：`npm run build`
-- 输出目录：`dist`
-- SPA 路由重写已配置
 
 ## License
 
